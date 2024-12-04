@@ -1,0 +1,534 @@
+/* Estilo General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para la barra de navegación */
+header {
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* Oculta el desbordamiento */
+    width: 100%; /* Ajusta el ancho según sea necesario */
+}
+
+.navbar-wrapper {
+    display: flex;
+    overflow: hidden; /* Oculta el desbordamiento de la barra de navegación */
+    width: calc(100% - 50px); /* Ajusta el ancho para que no se superponga con los botones */
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.3s ease; /* Suaviza el desplazamiento */
+}
+
+.navbar li {
+    padding: 10px 15px; /* Espaciado entre los elementos */
+}
+
+.scroll-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px; /* Tamaño de la flecha */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px; /* Ajusta el ancho según sea necesario */
+}
+
+.search-container button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+.user-options {
+    display: flex;
+    align-items: center;
+}
+.user-options a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.user-options a:hover {
+    color: #007bff;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+
+.cart-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+/* Estilos para la barra de navegación de categorías */
+.navbar-container {
+    background-color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    list-style: none;
+}
+
+.navbar li {
+    padding: 10px 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+.navbar a.categoria {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a.categoria:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+/* Barra de navegación de categorías con carrusel */
+.navbar-container {
+    position: relative;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar {
+    display: flex;
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    white-space: nowrap;
+    transition: transform 0.3s ease;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-options {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cart-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 8px;
+    font-size: 0.8em;
+}
+
+.navbar {
+    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+.navbar::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+.navbar li {
+    padding: 10px 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.scroll-btn.left {
+    left: 10px;
+}
+
+.scroll-btn.right {
+    right: 10px;
+}
+
+.navbar-container:hover .scroll-btn {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Carrusel */
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.slide-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.prev-slide, .next-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev-slide {
+    left: 10px;
+}
+
+.next-slide {
+    right: 10px;
+}
+
+.prev-slide:hover, .next-slide:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Estilos Responsivos */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+/* Sección de productos */
+.productos-destacados, .productos-recomendados {
+    padding: 30px 20px;
+    background-color: #ffffff;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.producto {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+/*Ofertas especiales*/
+.ofertas-especiales {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+}
+
+.ofertas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.oferta-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.oferta-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.oferta-detalles {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+/* Estilos para la sección de Categorías Populares */
+.categorias-populares {
+    padding: 30px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.categoria-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.categoria-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.categoria-card h3 {
+    padding: 15px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.categoria-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para las secciones de productos */
+.nuevos-productos, .productos-mas-vendidos, .productos-en-oferta {
+    padding: 30px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.producto {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.producto h3 {
+    padding: 15px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.btn-agregar {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-agregar:hover {
+    background-color: #218838;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+/* Opiniones */
+.opiniones {
+    padding: 30px;
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: white;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+}
+
+.opinion {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    font-style: italic;
+}
+
+/*Botón flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.whatsapp-float img {
+    width: 30px;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 2em;
+    }
+
+    .navbar ul li a {
+        font-size: 0.9em;
+        padding: 8px 15px;
+        min-width: 100px; /* Reducir tamaño en pantallas pequeñas */
+    }
+}
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Compras - PowerUp Universe</title>
+    <link rel="stylesheet" href="botonesdeinicio.css">
+</head>
+<body>
+    <header>
+        <h1>Mis Compras</h1>
+    </header>
+    <main>
+        <section class="purchase-list">
+            <h2>Tus Compras Recientes</h2>
+            <ul>
+                <li>Producto 1 - $10.00 - <a href="#">Ver Detalles</a></li>
+                <li>Producto 2 - $20.00 - <a href="#">Ver Detalles</a></li>
+                <li>Producto 3 - $30.00 - <a href="#">Ver Detalles</a></li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        document.querySelectorAll('.purchase-list a').forEach(link => {
+            link.addEventListener('click', () => {
+                alert('Purchase details coming soon!');
+            });
+        });
+    </script>
+</body>
+</html>

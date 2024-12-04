@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerUp Universe - Tu Tienda en Línea de Confianza</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="Img/logo.jpg" alt="PowerUp Universe" class="logo">
+                <span class="location">Enviar a: Ciudad</span>
+            </div>
+            
+            <div class="search-container">
+                <input type="text" placeholder="Buscar productos...">
+                <button>🔍</button>
+            </div>
+            
+            <div class="user-options">
+                <a href="register.html" class="account">Crea tu cuenta</a>
+                <a href="login.html" class="login">Ingresa</a>
+                <a href="purchases.html" class="purchases">Mis compras</a>
+                <div class="cart-icon">
+                    🛒 
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-container">
+            <button class="scroll-btn left" onclick="scrollNavbar(-200)">&#8249;</button>
+            <nav class="navbar-wrapper">
+                <ul class="navbar">
+                    <li><a href="index.html" class="categoria">🏠 INICIO</a></li>
+                    <li><a href="todos.html" class="categoria">📊 TODOS</a></li>
+                    <li><a href="preciosinsuperables.html" class="categoria">💰 $ PRECIOS INSUPERABLES</a></li>
+                    <li><a href="infantil.html" class="categoria">👶 INFANTIL</a></li>
+                    <li><a href="hogar.html" class="categoria">🏡 HOGAR Y DECORACIÓN</a></li>
+                    <li><a href="belleza.html" class="categoria">💄 BELLEZA Y CUIDADO PERSONAL</a></li>
+                    <li><a href="muebles.html" class="categoria">🛋️ MUEBLES</a></li>
+                    <li><a href="cocina.html" class="categoria">🍳 COCINA</a></li>
+                    <li><a href="tecnologia.html" class="categoria">💻 TECNOLOGÍA</a></li>
+                    <li><a href="ferreteria.html" class="categoria">🔧 FERRETERÍA</a></li>
+                    <li><a href="deporte.html" class="categoria">🏃 DEPORTE</a></li>
+                    <li><a href="relojes.html" class="categoria">⌚ RELOJ Y ACCESORIOS</a></li>
+                    <li><a href="ropa.html" class="categoria">👗 ROPA Y MODA</a></li>
+                    <li><a href="vehiculos.html" class="categoria">🚗 VEHÍCULOS</a></li>
+                    <li><a href="bebes.html" class="categoria">👶🍼 BEBÉS</a></li>
+                    <li><a href="adultos.html" class="categoria">🔞 PRODUCTOS PARA ADULTOS</a></li>
+                    <li><a href="papeleria.html" class="categoria">📝 PAPELERÍA Y OFICINA</a></li>
+                    <li><a href="mascotas.html" class="categoria">🐶 MASCOTAS</a></li>
+                    <li><a href="supermercado.html" class="categoria">🛒 SUPERMERCADO</a></li>
+                    <li><a href="farmacia.html" class="categoria">💊 FARMACIA</a></li>
+                    <li><a href="navidad.html" class="categoria">🎄 NAVIDAD</a></li>
+                </ul>
+            </nav>
+            <button class="scroll-btn right" onclick="scrollNavbar(200)">&#8250;</button>
+        </div>
+        <!-- Carrusel -->
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide" style="background-image: url('Img/Slider\ accesorios.jpg');">
+                    <div class="slide-content">
+                        <h2>¡Bienvenidos a PowerUp Universe!</h2>
+                        <p>Explora los mejores productos al mejor precio.</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('Img/Slider\ consola.jpg');">
+                    <div class="slide-content">
+                        <h2>Ofertas Exclusivas</h2>
+                        <p>¡Aprovecha nuestras ofertas por tiempo limitado!</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('Img/Slider\ laptop.jpg');">
+                    <div class="slide-content">
+                        <h2>Productos Recomendados</h2>
+                        <p>Encuentra artículos seleccionados especialmente para ti.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="prev-slide">❮</button>
+            <button class="next-slide">❯</button>
+        </div>
+    </header>
+    
+    <!-- Sección de productos destacados -->
+    <section class="productos-destacados">
+    <h2>Productos Destacados</h2>
+    <div class="productos-grid">
+        <div class="producto">
+            <img src="Img/producto1.jpg" alt="Producto 1">
+            <h3>Producto 1</h3>
+            <button class="btn-agregar" data-nombre="Producto 1" data-precio="10.00">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Img/producto2.jpg" alt="Producto 2">
+            <h3>Producto 2</h3>
+            <button class="btn-agregar" data-nombre="Producto 2" data-precio="20.00">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Img/producto3.jpg" alt="Producto 3">
+            <h3>Producto 3</h3>
+            <button class="btn-agregar" data-nombre="Producto 3" data-precio="30.00">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Img/producto4.jpg" alt="Producto 4">
+            <h3>Producto 4</h3>
+            <button class="btn-agregar" data-nombre="Producto 4" data-precio="40.00">Agregar al Carrito</button>
+        </div>
+    </div>
+    </section>
+
+    <!-- Sección de productos recomendados -->
+    <section class="productos-recomendados">
+    <h2>Te Recomendamos</h2>
+    <div class="productos-grid">
+        <div class="producto">
+            <img src="Img/productoA.jpg" alt="Producto A">
+            <h3>Producto A</h3>
+            <button class="btn-agregar" data-nombre="Producto A" data-precio="15.00">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Img/productoB.jpg" alt="Producto B">
+            <h3>Producto B</h3>
+            <button class="btn-agregar" data-nombre="Producto B" data-precio="25.00">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Img/productoC.jpg" alt="Producto C">
+            <h3>Producto C</h3>
+            <button class="btn-agregar" data-nombre="Producto C" data-precio="35.00">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Img/productoD.jpg" alt="Producto D">
+            <h3>Producto D</h3>
+            <button class="btn-agregar" data-nombre="Producto D" data-precio="45.00">Agregar al Carrito</button>
+        </div>
+    </div>
+    </section>
+
+    <!-- Sección de Ofertas Especiales -->
+    <section class="ofertas-especiales">
+    <h2>Ofertas especiales</h2>
+    <div class="productos-grid">
+        <div class="producto">
+            <img src="Img/productoA.jpg" alt="Producto A">
+            <h3>Producto A</h3>
+            <button class="btn-agregar" data-nombre="Producto A" data-precio="15.00">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Img/productoB.jpg" alt="Producto B">
+            <h3>Producto B</h3>
+            <button class="btn-agregar" data-nombre="Producto B" data-precio="25.00">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Img/productoC.jpg" alt="Producto C">
+            <h3>Producto C</h3>
+            <button class="btn-agregar" data-nombre="Producto C" data-precio="35.00">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Img/productoD.jpg" alt="Producto D">
+            <h3>Producto D</h3>
+            <button class="btn-agregar" data-nombre="Producto D" data-precio="45.00">Agregar al Carrito</button>
+        </div>
+    </div>
+    </section>
+
+    <!-- Sección de productos recomendados -->
+    <section class="productos-recomendados">
+        <h2>Te Recomendamos</h2>
+        <div class="productos-grid">
+            <div class="producto">
+                <h3>Producto A</h3>
+                <button class="btn-agregar" data-nombre="Producto A" data-precio="15.00">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <h3>Producto B</h3>
+                <button class="btn-agregar" data-nombre="Producto B" data-precio="25.00">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <h3>Producto C</h3>
+                <button class="btn-agregar" data-nombre="Producto C" data-precio="35.00">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <h3>Producto D</h3>
+                <button class="btn-agregar" data-nombre="Producto D" data-precio="45.00">Agregar al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Categorías Populares -->
+    <section class="categorias-populares">
+    <h2>Categorías Populares</h2>
+    <div class="categorias-grid">
+        <div class="categoria-card">
+            <img src="Img/tecnologia.jpg" alt="Tecnología">
+            <h3>Tecnología</h3>
+        </div>
+        <div class="categoria-card">
+            <img src="Img/hogar.jpg" alt="Hogar y Decoración">
+            <h3>Hogar y Decoración</h3>
+        </div>
+        <div class="categoria-card">
+            <img src="Img/belleza.jpg" alt="Belleza y Cuidado Personal">
+            <h3>Belleza y Cuidado Personal</h3>
+        </div>
+        <div class="categoria-card">
+            <img src="Img/ropa.jpg" alt="Ropa y Moda">
+            <h3>Ropa y Moda</h3>
+        </div>
+        <div class="categoria-card">
+            <img src="Img/mascotas.jpg" alt="Mascotas">
+            <h3>Mascotas</h3>
+        </div>
+        <div class="categoria-card">
+            <img src="Img/deporte.jpg" alt="Deporte">
+            <h3>Deporte</h3>
+        </div>
+        <div class="categoria-card">
+            <img src="Img/ferreteria.jpg" alt="Ferretería">
+            <h3>Ferretería</h3>
+        </div>
+        <div class="categoria-card">
+            <img src="Img/bebes.jpg" alt="Bebés">
+            <h3>Bebés</h3>
+        </div>
+    </div>
+    </section>
+
+   <!-- Sección de Nuevos Productos -->
+   <section class="nuevos-productos">
+    <h2>Nuevos Productos</h2>
+    <div class="productos-grid">
+        <div class="producto">
+            <img src="Img/nuevo_producto1.jpg" alt="Nuevo Producto 1">
+            <h3>Nuevo Producto 1</h3>
+            <button class="btn-agregar" data-nombre="Nuevo Producto 1" data-precio="50.00">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Img/nuevo_producto2.jpg" alt="Nuevo Producto 2">
+            <h3>Nuevo Producto 2</h3>
+            <button class="btn-agregar" data-nombre="Nuevo Producto 2" data-precio="60.00">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Img/nuevo_producto3.jpg" alt="Nuevo Producto 3">
+            <h3>Nuevo Producto 3</h3>
+            <button class="btn-agregar" data-nombre="Nuevo Producto 3" data-precio="70.00">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Img/nuevo_producto4.jpg" alt="Nuevo Producto 4">
+            <h3>Nuevo Producto 4</h3>
+            <button class="btn-agregar" data-nombre="Nuevo Producto 4" data-precio="80.00">Agregar al Carrito</button>
+        </div>
+    </div>
+   </section>
+
+   <!-- Sección de Más Vendidos -->
+   <section class="productos-mas-vendidos">
+    <h2>Más Vendidos</h2>
+    <div class="productos-grid">
+        <div class="producto">
+            <img src="Img/mas_vendido1.jpg" alt="Producto Más Vendido 1">
+            <h3>Producto Más Vendido 1</h3>
+            <button class="btn-agregar" data-nombre="Producto Más Vendido 1" data-precio="90.00">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Img/mas_vendido2.jpg" alt="Producto Más Vendido 2">
+            <h3>Producto Más Vendido 2</h3>
+            <button class="btn-agregar" data-nombre="Producto Más Vendido 2" data-precio="100.00">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Img/mas_vendido3.jpg" alt="Producto Más Vendido 3">
+            <h3>Producto Más Vendido 3</h3>
+            <button class="btn-agregar" data-nombre="Producto Más Vendido 3" data-precio="110.00">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Img/mas_vendido4.jpg" alt="Producto Más Vendido 4">
+            <h3>Producto Más Vendido 4</h3>
+            <button class="btn-agregar" data-nombre="Producto Más Vendido 4" data-precio="120.00">Agregar al Carrito</button>
+        </div>
+    </div>
+   </section>
+
+   <!-- Sección de Productos en Oferta -->
+   <section class="productos-en-oferta">
+    <h2>Productos en Oferta</h2>
+    <div class="productos-grid">
+        <div class="producto">
+            <img src="Img/oferta_producto1.jpg" alt="Producto en Oferta 1">
+            <h3>Producto en Oferta 1</h3>
+            <button class="btn-agregar" data-nombre="Producto en Oferta 1" data-precio="45.00">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Img/oferta_producto2.jpg" alt="Producto en Oferta 2">
+            <h3>Producto en Oferta 2</h3>
+            <button class="btn-agregar" data-nombre="Producto en Oferta 2" data-precio="35.00">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Img/oferta_producto3.jpg" alt="Producto en Oferta 3">
+            <h3>Producto en Oferta 3</h3>
+            <button class="btn-agregar" data-nombre="Producto en Oferta 3" data-precio="25.00">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Img/oferta_producto4.jpg" alt="Producto en Oferta 4">
+            <h3>Producto en Oferta 4</h3>
+            <button class="btn-agregar" data-nombre="Producto en Oferta 4" data-precio="15.00">Agregar al Carrito</button>
+        </div>
+    </div>
+   </section>
+
+   <!-- Sección de opiniones de usuarios -->
+    <section class="opiniones">
+        <h2>Opiniones de Nuestros Clientes</h2>
+        <div class="opinion">
+            <p>"Excelente servicio y productos de calidad."</p>
+            <p>- Usuario 1</p>
+        </div>
+        <div class="opinion">
+            <p>"Rápido envío y atención al cliente sobresaliente."</p>
+            <p>- Usuario 2</p>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-info">
+            <div class="footer-links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Ofertas Especiales</a></li>
+                    <li><a href="#">Categorías</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contacto</h3>
+                <p>Email: soporte@powerupuniverse.com</p>
+                <p>Teléfono: +57 317 316 4658</p>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <p>&copy; 2024 PowerUp Universe. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Boton de WhatsApp -->
+    <a href="https://wa.me/3173164658" class="whatsapp-float" target="_blank">
+        <img src="Img/Whatsapp.png" alt="Chat con nosotros en WhatsApp" width="50">
+    </a>
+    <!-- Script.js -->
+    <script src="script.js"></script>
+</body>
+</html>

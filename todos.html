@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerUp Universe - Todos los Productos</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="Img/logo.jpg" alt="PowerUp Universe" class="logo">
+                <span class="location">Enviar a: Ciudad</span>
+            </div>
+            <div class="user-options">
+                <a href="register.html" class="account">Crea tu cuenta</a>
+                <a href="login.html" class="login">Ingresa</a>
+                <a href="purchases.html" class="purchases">Mis compras</a>
+                <div class="cart-icon">
+                    🛒 
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-container">
+            <button class="scroll-btn left" onclick="scrollNavbar(-200)">&#8249;</button>
+            <nav class="navbar-wrapper">
+                <ul class="navbar">
+                    <li><a href="index.html" class="categoria">🏠 INICIO</a></li>
+                    <li><a href="todos.html" class="categoria">📊 TODOS</a></li>
+                    <li><a href="preciosinsuperables.html" class="categoria">💰 $ PRECIOS INSUPERABLES</a></li>
+                    <li><a href="infantil.html" class="categoria">👶 INFANTIL</a></li>
+                    <li><a href="hogar.html" class="categoria">🏡 HOGAR Y DECORACIÓN</a></li>
+                    <li><a href="belleza.html" class="categoria">💄 BELLEZA Y CUIDADO PERSONAL</a></li>
+                    <li><a href="muebles.html" class="categoria">🛋️ MUEBLES</a></li>
+                    <li><a href="cocina.html" class="categoria">🍳 COCINA</a></li>
+                    <li><a href="tecnologia.html" class="categoria">💻 TECNOLOGÍA</a></li>
+                    <li><a href="ferreteria.html" class="categoria">🔧 FERRETERÍA</a></li>
+                    <li><a href="deporte.html" class="categoria">🏃 DEPORTE</a></li>
+                    <li><a href="relojes.html" class="categoria">⌚ RELOJ Y ACCESORIOS</a></li>
+                    <li><a href="ropa.html" class="categoria">👗 ROPA Y MODA</a></li>
+                    <li><a href="vehiculos.html" class="categoria">🚗 VEHÍCULOS</a></li>
+                    <li><a href="bebes.html" class="categoria">👶🍼 BEBÉS</a></li>
+                    <li><a href="adultos.html" class="categoria">🔞 PRODUCTOS PARA ADULTOS</a></li>
+                    <li><a href="papeleria.html" class="categoria">📝 PAPELERÍA Y OFICINA</a></li>
+                    <li><a href="mascotas.html" class="categoria">🐶 MASCOTAS</a></li>
+                    <li><a href="supermercado.html" class="categoria">🛒 SUPERMERCADO</a></li>
+                    <li><a href="farmacia.html" class="categoria">💊 FARMACIA</a></li>
+                    <li><a href="navidad.html" class="categoria">🎄 NAVIDAD</a></li>
+                </ul>
+            </nav>
+            <button class="scroll-btn right" onclick="scrollNavbar(200)">&#8250;</button>
+        </div>
+    </header>
+
+    <!-- Contenido de la Página -->
+    <main>
+        <h1>Todos los Productos</h1>
+        <p>Explora nuestra amplia gama de productos disponibles en PowerUp Universe.</p>
+        <div class="productos-grid">
+            <div class="producto">
+                <img src="Img/producto1.jpg" alt="Producto 1">
+                <h3>Producto 1</h3>
+                <button class="btn-agregar" data-nombre="Producto 1" data-precio="10.00">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src ="Img/producto2.jpg" alt="Producto 2">
+                <h3>Producto 2</h3>
+                <button class="btn-agregar" data-nombre="Producto 2" data-precio="15.00">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="Img/producto3.jpg" alt="Producto 3">
+                <h3>Producto 3</h3>
+                <button class="btn-agregar" data-nombre="Producto 3" data-precio="20.00">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="Img/producto4.jpg" alt="Producto 4">
+                <h3>Producto 4</h3>
+                <button class="btn-agregar" data-nombre="Producto 4" data-precio="25.00">Agregar al Carrito</button>
+            </div>
+            <!-- Agrega más productos según sea necesario -->
+        </div>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 PowerUp Universe. Todos los derechos reservados.</p>
+    </footer>
+    <!-- Script.js -->
+    <script src="script.js"></script>
+</body>
+</html>
